@@ -1,0 +1,129 @@
+
+.proizvodi{
+    text-align: center;
+    list-style: none;
+    margin-top: 10%;
+    padding: 15px;
+}
+
+.pivo{
+    border: 5px double gray;
+    border-radius: 10%;
+    min-width: 100px;
+    min-height: 100px;
+    background-image: radial-gradient(#D1B051, white);
+}
+
+.pivo figure img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.pivo figcaption{
+    text-align: center;
+}
+
+
+
+/* EXSTRA SMALL SCREEN */
+
+@media screen and (max-width: 575px){
+    .proizvodi{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .proizvodi li{
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pivo figcaption{
+        padding: 5%;
+        font-size: 0.8em;
+    }
+    
+}
+
+/* SMALL SCREEN */
+
+@media screen and (min-width: 576px){
+    .proizvodi{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .proizvodi li{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .pivo figure{
+        padding: 5px;
+        margin: 5px;
+    }
+    .pivo figcaption{
+        padding: 5%;
+        font-size: 1em;
+    }
+}
+
+/* MEDIUM SCREEN */
+
+@media screen and (min-width: 768px){
+    
+    .proizvodi{
+        margin: 10%;
+        
+    }
+
+    .proizvodi li{
+        margin: 5%;
+    }
+
+    .pivo figcaption{
+        font-size: 1.2em;
+    }
+}
+/* LARGE SCREEN */
+
+@media screen and (min-width: 992px){  
+
+    .proizvodi{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .proizvodi li{
+        margin: 5%;
+    }
+
+    .pivo figure{
+        padding: 5px;
+        margin: 5px;
+    }
+    .pivo figcaption{
+        padding: 5px;
+        font-size: 1em;
+        display: flex;
+        align-items: flex-start;
+        height: 100% 
+    }
+}
+
+/* EXTRA LARGE SCREEN */
+
+@media screen and (min-width: 1200px){
+    
+}
+
+/*  DOUBLE EXTRA LARGE SCREEN */
+
+@media screen and (min-width: 1400px){
+    .pivo figcaption{
+        font-size: 1.2em;
+    }
+}

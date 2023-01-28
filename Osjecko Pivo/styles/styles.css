@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: #D1B051; 
+    background-image: radial-gradient(circle at right,#D1B051, white); 
+}
+ 
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1{
+    width: 100%;
+    text-align: center;
+
+    border-top: 5px ridge gold;
+    border-bottom: 5px groove gold;
+}
+
+header figure{
+    border: 5px ridge gold;
+}
+
+header img:hover{
+    scale:1.1;
+}
+
+header nav{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+
+    border-bottom: 5px ridge gold;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover{
+    color:gray;
+    scale: 1.1;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: flex-start;*/
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.naslovnica:nth-child(1){
+    display: flex;
+    flex: 1 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.naslovnica:nth-child(2){
+    display: flex;
+    flex: 3 200px;
+}
+
+.naslovnaSlika{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    margin-top:5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-top: 5px ridge gold; 
+}
+
+footer ul{
+    display: flex;
+    gap: 10%;
+    list-style: none;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+footer figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img:hover{
+    scale:1.1;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* EXSTRA SMALL SCREEN */
+
+@media screen and (max-width: 575px){
+    header div h1{
+        font-size: 2em;
+    }
+    header nav{
+        font-size: 1em;
+    }
+    .grbHeader{
+        width: 100px;
+        height: auto;
+    }
+    footer ul{
+        gap: 7%;
+    }
+    footer p{
+        font-size: 0.7em;
+    }
+    .naslovnica:nth-child(1){
+        font-size: 1em;
+    }
+}
+/* SMALL SCREEN */
+
+@media screen and (min-width: 576px){
+    
+    header div h1{
+        font-size: 2em;
+    }
+    header nav{
+        font-size: 1em;
+    }
+    .grbHeader{
+        width: 100px;
+        height: auto;
+    }
+    footer ul{
+        gap: 7%;
+    }
+    footer p{
+        font-size: 0.7em;
+    }
+    .naslovnica:nth-child(1){
+        font-size: 1em;
+    }
+}
+
+/* MEDIUM SCREEN */
+
+@media screen and (min-width: 768px){
+    header div h1{
+        font-size: 3em;
+    }
+
+    header nav{
+        font-size: 1.5em;
+    }
+    .grbHeader{
+        width: 150px;
+        height: auto;
+    }
+    footer ul{
+        gap: 10%;
+    }
+    footer p{
+        font-size: 0.85em;
+    }
+    .naslovnica:nth-child(1){
+        font-size: 1.5em;
+    }
+}
+/* LARGE SCREEN */
+
+@media screen and (min-width: 992px){
+    footer ul{
+        gap: 15%;
+    }
+    footer p{
+        font-size: 1em;
+    }
+}
+
+/* EXTRA LARGE SCREEN */
+
+@media screen and (min-width: 1200px){
+    footer ul{
+        gap: 15%;
+    }
+}
+
+
+/*  DOUBLE EXTRA LARGE SCREEN */
+
+@media screen and (min-width: 1400px){
+    .naslovnica:nth-child(1){
+        font-size: 2.5em;
+    }
+    footer p{
+        font-size: 1.5em;
+    }
+
+    footer li{
+        padding: 15px;
+    }
+}
